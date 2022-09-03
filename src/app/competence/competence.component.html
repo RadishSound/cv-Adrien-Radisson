@@ -1,0 +1,18 @@
+<mat-tab-group mat-align-tabs="start">
+    <mat-tab label="Langues">
+        <div class="card-container">
+            <app-card _nghost-c0="" *ngFor="let activite of listeCompetencesLangue" [card]="activite"></app-card>
+        </div>
+    </mat-tab>
+    <mat-tab label="Programmation">
+        <div class="card-container">
+            <app-card _nghost-c0="" *ngFor="let activite of listeCompetencesProgrammation" [card]="activite" [ngStyle]="{'height': '300'}"></app-card>
+        </div>
+    </mat-tab>
+    <mat-tab label="Outils">
+        <div class="card-container">
+            <app-card _nghost-c0="" *ngFor="let activite of listeCompetencesOutil" [card]="activite"></app-card>
+        </div>
+    </mat-tab>
+</mat-tab-group>
+

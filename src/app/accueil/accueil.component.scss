@@ -1,0 +1,148 @@
+.fond-diagonal {
+    width: 100%;
+    height: 100%;
+    background: rgb(238, 233, 233);
+
+}
+
+.photo {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    height: 80%;
+    z-index: 0;
+
+}
+
+#accueil {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-15deg,
+            #52398b 0%,
+            #52398b 50%,
+            rgb(238, 233, 233, 0) 50%,
+            rgb(238, 233, 233, 0) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+}
+
+#description {
+    margin: 10px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+#info-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2%;
+    background-color: rgb(245, 245, 245);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    padding: 2%;
+    margin-bottom: 2%;
+
+}
+
+#icon-content {
+
+    padding-top: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.icon {
+    margin-left: 4%;
+    margin-top: 10%;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: black;
+
+}
+
+mat-icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+#presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#nom {
+    margin-top: 5px;
+    font-size: 20px;
+    color: black;
+
+
+}
+
+
+
+.line-separator {
+    width: 90%;
+    height: 1px;
+    margin-top: 20px;
+    background-color: #7e7e7e;
+
+}
+
+.copy-button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+@media only screen and (max-height: 400px) {
+
+
+    #nom{
+        font-size: 12px;
+    }
+.photo{
+    visibility: hidden;
+}
+    .icon {
+        margin-left: 15px;
+        margin-top: 10px;
+        font-size: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        color: black;
+
+    }
+
+    mat-icon {
+        margin-right: 8px;
+        font-size: 10px;
+    }
+
+    .copy-button {
+        font-size: 8px;
+
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .photo{
+        visibility: hidden;
+    }
+}
