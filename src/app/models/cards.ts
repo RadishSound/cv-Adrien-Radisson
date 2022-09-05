@@ -1,9 +1,10 @@
 export class Cards{
-    titre!:String;
-    sousTitre?:String;
-    description?:String;
-    imageUrl !: String;
-    titleButton ?: String;
+    titre!:string;
+    sousTitre?:string;
+    description?:string;
+    imageUrl !: string;
     niveau ?: number;
-    date ?: String;
+    date ?: string;
+    lienUrl?: string;
+    lienNom?: string;
 }

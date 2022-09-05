@@ -1,21 +1,30 @@
-<mat-card class="card">
-    <mat-card-header>
-        <mat-card-title>{{card.titre}}</mat-card-title>
 
-        <mat-card-subtitle  *ngIf="card.sousTitre">{{card.sousTitre}}</mat-card-subtitle>
-    <mat-card-subtitle class = "date" *ngIf="card.date" >
-        {{card.date}}
-    </mat-card-subtitle>
+<div class="card">
+    <div class="card-header">
+        <div class="card-title">{{card.titre}}</div>
 
-</mat-card-header>
+        <div class="card-subtitle" *ngIf="card.sousTitre">{{card.sousTitre}}</div>
+        <div class="date" *ngIf="card.date">
+            {{card.date}}
+        </div>
+        <div class="rating" *ngIf="card.niveau">
+            <span class="fa fa-star" [ngClass]="{checked: card.niveau >= 1}"></span>
+            <span class="fa fa-star" [ngClass]="{checked: card.niveau >= 2}"></span>
+            <span class="fa fa-star" [ngClass]="{checked: card.niveau >= 3}"></span>
+            <span class="fa fa-star" [ngClass]="{checked: card.niveau >= 4}"></span>
+            <span class="fa fa-star" [ngClass]="{checked: card.niveau === 5}"></span>
+        </div>
+    </div>
 
-    <img mat-card-image [src]="card.imageUrl">
-    <mat-card-content  *ngIf="card.description">
-        <p id="description">
+    <img class="card-img" [src]="card.imageUrl">
+
+    <div div class="card-content">
+
+        <p id="description" *ngIf="card.description">
             {{card.description}}
         </p>
-    </mat-card-content>
-    <mat-card-actions *ngIf="card.titleButton">
-        <button mat-button>{{card.titleButton}}</button>
-      </mat-card-actions>
-</mat-card>
+        <button mat-raised-button class="card-button" *ngIf="card.lienUrl && card.lienNom" (click) = "onLink()">{{card.lienNom}}</button>
+
+    </div>
+
+</div>

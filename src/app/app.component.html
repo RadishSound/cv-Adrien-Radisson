@@ -1,18 +1,20 @@
 <mat-toolbar>
     <div id="lien-externes">
-        <button mat-button class="lien-externes-button" ><a href="../assets/CV Adrien Radisson.pdf"  target="_blank">CV</a>
+        <button mat-button class="lien-externes-button"><a href="../assets/CV Adrien Radisson.pdf"
+                target="_blank">CV</a>
         </button>
-        <button mat-button class="lien-externes-button"><a href="http://www.linkedin.com/in/adrien-radisson">Linkedin</a>
-        
+        <button mat-button class="lien-externes-button"><a
+                href="http://www.linkedin.com/in/adrien-radisson">Linkedin</a>
+
         </button>
     </div>
     <div class="cube">
-      <div class="face front"></div>
-      <div class="face back"></div>
-      <div class="face right"></div>
-      <div class="face left"></div>
-      <div class="face top"></div>
-      <div class="face bottom"></div>
+        <div class="face front"></div>
+        <div class="face back"></div>
+        <div class="face right"></div>
+        <div class="face left"></div>
+        <div class="face top"></div>
+        <div class="face bottom"></div>
     </div>
     <button mat-icon-button *ngIf="sidenav.mode === 'over' && !sidenav.opened " (click)="sidenav.open()">
         <mat-icon>menu</mat-icon>
@@ -39,8 +41,8 @@
 
             <div id="sidenav-content">
                 <button mat-button class="sidenav-button" [routerLink]="['']">
-                    <mat-icon class="icon-sidenav">person</mat-icon>                   
-                     <span>Contact</span>
+                    <mat-icon class="icon-sidenav">person</mat-icon>
+                    <span>Contact</span>
 
                 </button>
 
@@ -66,9 +68,14 @@
                     <span>Activités</span>
 
                 </button>
+                <button mat-button class="sidenav-button" [routerLink]="['project']">
+                    <mat-icon class="icon-sidenav">library_books</mat-icon>
+                    <span>Projets</span>
+
+                </button>
 
             </div>
-            
+
 
         </div>
 
