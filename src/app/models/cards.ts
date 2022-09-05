@@ -1,7 +1,7 @@
 export class Cards{
     titre!:string;
     sousTitre?:string;
-    description?:string;
+    description?:string[];
     imageUrl !: string;
     niveau ?: number;
     date ?: string;

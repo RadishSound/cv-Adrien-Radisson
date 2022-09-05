@@ -10,17 +10,17 @@ export class CardService {
     {
       titre: "Football",
       imageUrl: './../../assets/ensmm-foot.jpg',
-      description: "J'ai pratiqué le football en club pendant 10 ans. Durant mes études à l'ENSMM j'ai rejoins l'équipe foot de cette école. J'ai été coach de l'équipe pendant une année."
+      description: ["J'ai pratiqué le football en club pendant 10 ans."," Durant mes études à l'ENSMM j'ai rejoins l'équipe foot de cette école."," J'ai été coach de l'équipe pendant une année."]
     },
     {
       titre: "Guitare",
       imageUrl: './../../assets/hendrix.jpg',
-      description: " "
+      description: []
     },
     {
       titre: "Musculation",
       imageUrl: './../../assets/muscu.jpg',
-      description: " "
+      description: [] 
     },
     {
       titre: "Patisserie",
@@ -32,7 +32,7 @@ export class CardService {
       titre: "Diplôme d'ingénieur",
       sousTitre: "ENSMM, Besançon",
       imageUrl: './../../assets/ensmm.png',
-      description: "Formation généraliste orientée mécanique. En dernière année, j'ai choisi l'option système mécatronique et robotique.",
+      description: ["Formation généraliste orientée mécanique."," En dernière année, j'ai choisi l'option système mécatronique et robotique."],
       date: "2022",
     },
     {
@@ -40,14 +40,14 @@ export class CardService {
       sousTitre: "Lycée Jean-Perrin, Lyon ",
       imageUrl: './../../assets/prepa.jpg',
       date: "2019-2017",
-      description: "Physique et sciences de l'ingénieur"
+      description: ["Physique et sciences de l'ingénieur"]
     },
     {
       titre: "Baccalauréat scientifique",
       sousTitre: "Lycée de la Plaine de l'Ain, Ambérieu-en-Bugey",
       imageUrl: './../../assets/bac.jpg',
       date: "2017",
-      description: "Mention très bien. Spécialité Sciences de l'Ingénieur et option Informatique et Sciences du Numérique"
+      description: ["Mention très bien.","Spécialité Sciences de l'Ingénieur et option Informatique et Sciences du Numérique"]
     }
   ]
   cardsExperience: Cards[] = [
@@ -57,7 +57,7 @@ export class CardService {
       imageUrl: './../../assets/astrée.png',
       lienNom:"voir le site",
       lienUrl:"https://www.astree-software.fr/",
-      description: "Ajout de fonctionnalités spécifiques sur le logiciel MES Aquiweb.  Développeur dans une équipe agile (XP et SCRUM). Mise à jour sur serveur, revue client",
+      description: ["Ajout de fonctionnalités spécifiques sur le logiciel MES Aquiweb.","  Développeur dans une équipe agile (XP et SCRUM)."," Mise à jour sur serveur, revue client"],
       date: "fév. 2022 - août 2022",
     },
     {
@@ -67,17 +67,17 @@ export class CardService {
       date: "fév 2021-août 2021",
       lienNom:"voir le site",
       lienUrl:"https://www.ckswitches.com/",
-      description: "Réalisation de préséries sur les lignes de production."+
-      " Assistance à la production."+
-      " Mesures et validation de produits au laboratoire."+
-      " Autonomie, Organisation, Communication, Réactivité"
+      description: ["Réalisation de préséries sur les lignes de production.",
+      " Assistance à la production.",
+      " Mesures et validation de produits au laboratoire.",
+      " Autonomie, Organisation, Communication, Réactivité"]
     }
   ]
   cardsCompetencesLangue: Cards[] = [
     {
       titre: "Français",
       sousTitre: "Langue maternelle",
-      imageUrl: './../../assets/france.jpg',
+      imageUrl: './../../assets/france.png',
         },
     {
       titre: "Anglais",
@@ -95,64 +95,61 @@ export class CardService {
       titre: "Java",
       niveau: 4,
       imageUrl: './../../assets/java.png',
-      description: "",
     },
     
     {
       titre: "JavaScript, HTML, CSS",
       niveau: 3,
       imageUrl: './../../assets/html-css-js.jpg',
-      description: ""
     },
     {
       titre: "Python",
       niveau: 3,
       imageUrl: './../../assets/python.png',
-      description: ""
     },
     {
       titre: "SQL",
       niveau: 3,
       imageUrl: './../../assets/postgresql.png',
-      description: ""
     }
   ]
   cardsCompetencesOutil: Cards[] = [
     {
       titre: "Git",
+      sousTitre: "Outil de versionning",
       niveau: 3,
       imageUrl: './../../assets/git.png',
-      description: ""
     },
     {
       titre: "Office",
+      sousTitre: "bureautique",
+
       niveau: 4,
       imageUrl: './../../assets/office.jpg',
-      description: ""
     },
     {
       titre: "Angular",
+      sousTitre: "Framework Front-end, TypeScript",
       niveau: 3,
       imageUrl: './../../assets/angular.png',
-      description:""
     },
     {
       titre: "Hibernate",
+      sousTitre: "Framework back-end, ORM, Java",
       niveau: 3,
       imageUrl: './../../assets/hibernate.png',
-      description: ""
     },
     {
       titre: "Play",
+      sousTitre: "Framework back-end Java",
       niveau: 3,
       imageUrl: './../../assets/play.png',
-      description: ""
     },
     {
       titre: "NodeJS",
+      sousTitre: "Framework back-end JavaScript",
       niveau: 2,
       imageUrl: './../../assets/nodejs.png',
-      description: ""
     }
   ]
   cardsProjetsPerso: Cards[] = [
@@ -161,7 +158,6 @@ export class CardService {
       sousTitre: "Angular",
       date: "2022",
       imageUrl: './../../assets/kanban.png',
-      description:"",
       lienUrl: "https://kanban-1c263.web.app",
       lienNom: "Lien vers projet"
 
@@ -192,7 +188,7 @@ export class CardService {
       sousTitre: "Python",
       date: "2022",
       imageUrl: './../../assets/pist.jpg',
-      description:"modélisation et contrôle du robot avec des moteurs Dynamixel",
+      description:["modélisation et contrôle du robot avec des moteurs Dynamixel"],
     },
     
     {
@@ -200,7 +196,7 @@ export class CardService {
       sousTitre: "Matlab",
       date: "2022",
       imageUrl: './../../assets/commande multivariable.png',
-      description:" Commande d'un système non linéaire dynamique multivariable. Mise en place d'un observateur, linéarisation du sytème, découplage, représentation d'état.",
+      description:["Commande d'un système non linéaire dynamique multivariable."," Mise en place d'un observateur, linéarisation du sytème, découplage, représentation d'état."],
       
 
     },
@@ -209,7 +205,7 @@ export class CardService {
       sousTitre: "Matlab",
       date: "2022",
       imageUrl: './../../assets/vision3D.png',
-      description:" Mosaique de deux images par homographie ",
+      description:[" Mosaique de deux images par homographie "],
       
     },
     {
@@ -217,7 +213,7 @@ export class CardService {
       sousTitre: "Matlab",
       date: "2022",
       imageUrl: './../../assets/vision3d-2.png',
-      description:" Représentation  3D d'un cube par triangulation 3D sur deux images  ",
+      description:["Représentation  3D d'un cube par triangulation 3D sur deux images"],
 
     },
     {
@@ -225,7 +221,7 @@ export class CardService {
       sousTitre: "Python, openCV",
       date: "2022",
       imageUrl: './../../assets/vision2D.png',
-      description:"Détection de forme sur une image",
+      description:["Détection de forme sur une image"],
       
     },
     {
@@ -233,21 +229,21 @@ export class CardService {
       sousTitre: "Java",
       date: "2021",
       imageUrl: './../../assets/amung-us.png',
-      description:"Jeu multijoueur de type Among-us réalisé en équipe de 7 personnes.",
+      description:["Jeu multijoueur de type Among-us réalisé en équipe de 7 personnes."],
     },
     {
       titre: "Labyrinthe",
       sousTitre: "Java",
       date: "2020",
       imageUrl: './../../assets/labyrinthe.png',
-      description:"Réalisation d'un labyrinthe avec solution",
+      description:["Réalisation d'un labyrinthe avec solution"],
     },
     {
       titre: "Jeu Démineur",
       sousTitre: "Python, tkinter",
       date: "2017",
       imageUrl: './../../assets/demineur.png',
-      description:"Réalisation d'un démineur en équipe de 3.",
+      description:["Réalisation d'un démineur en équipe de 3."],
     }
   ]
 
