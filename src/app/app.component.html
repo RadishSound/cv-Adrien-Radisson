@@ -1,5 +1,6 @@
 <mat-toolbar>
     <div id="lien-externes">
+        
         <button mat-button class="lien-externes-button"><a href="../assets/CV Adrien Radisson.pdf"
                 target="_blank">CV</a>
         </button>
@@ -7,15 +8,9 @@
                 href="http://www.linkedin.com/in/adrien-radisson">Linkedin</a>
 
         </button>
+        
     </div>
-    <div class="cube">
-        <div class="face front"></div>
-        <div class="face back"></div>
-        <div class="face right"></div>
-        <div class="face left"></div>
-        <div class="face top"></div>
-        <div class="face bottom"></div>
-    </div>
+    <div>{{titre}}</div>
     <button mat-icon-button *ngIf="sidenav.mode === 'over' && !sidenav.opened " (click)="sidenav.open()">
         <mat-icon>menu</mat-icon>
     </button>
@@ -40,35 +35,35 @@
 
 
             <div id="sidenav-content">
-                <button mat-button class="sidenav-button" [routerLink]="['']">
+                <button  mat-button class="sidenav-button" [routerLink]="['']" (click)="changeTitle('Contact')">
                     <mat-icon class="icon-sidenav">person</mat-icon>
                     <span>Contact</span>
 
                 </button>
 
-                <button mat-button class="sidenav-button" [routerLink]="['competence']">
+                <button mat-button class="sidenav-button" [routerLink]="['competence']" (click)="changeTitle('Compétences')">
                     <mat-icon class="icon-sidenav">star</mat-icon>
                     <span>Compétences</span>
 
 
                 </button>
-                <button mat-button class="sidenav-button" [routerLink]="['experience']">
+                <button mat-button class="sidenav-button" [routerLink]="['experience']" (click)="changeTitle('Expériences')">
                     <mat-icon class="icon-sidenav">business_center</mat-icon>
                     <span>Expériences</span>
 
                 </button>
 
-                <button mat-button class="sidenav-button" [routerLink]="['formation']">
+                <button mat-button class="sidenav-button" [routerLink]="['formation']" (click)="changeTitle('Formation')">
                     <mat-icon class="icon-sidenav">school</mat-icon>
                     <span>Formation</span>
 
                 </button>
-                <button mat-button class="sidenav-button" [routerLink]="['activite']">
+                <button mat-button class="sidenav-button" [routerLink]="['activite']" (click)="changeTitle('Activités')">
                     <mat-icon class="icon-sidenav">directions_run</mat-icon>
                     <span>Activités</span>
 
                 </button>
-                <button mat-button class="sidenav-button" [routerLink]="['project']">
+                <button mat-button class="sidenav-button" [routerLink]="['project']" (click)="changeTitle('Projets')">
                     <mat-icon class="icon-sidenav">library_books</mat-icon>
                     <span>Projets</span>
 

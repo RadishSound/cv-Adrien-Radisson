@@ -15,12 +15,12 @@ export class CardService {
     {
       titre: "Guitare",
       imageUrl: './../../assets/hendrix.jpg',
-      description: "Je fais de la guitare depuis mes 10 ans. Après 3 ans de cours, j'ai décidé d'arrêter pour apprendre de mon coté via des cours en ligne. Mes pricniaples influences sont Jimi Hendrix, Stevie Ray Vaughan ou encore Angus Young."
+      description: " "
     },
     {
       titre: "Musculation",
       imageUrl: './../../assets/muscu.jpg',
-      description: "Depuis 2017, je fais de la musculation chez moi ou en salle de sport."
+      description: " "
     },
     {
       titre: "Patisserie",
@@ -32,7 +32,7 @@ export class CardService {
       titre: "Diplôme d'ingénieur",
       sousTitre: "ENSMM, Besançon",
       imageUrl: './../../assets/ensmm.png',
-      description: "Ecole Nationale Supérieure de Mécanique et des Microtechniques. Formation généraliste orientée mécanique. En dernière année, j'ai choisi l'option système mécatronique et robotique.",
+      description: "Formation généraliste orientée mécanique. En dernière année, j'ai choisi l'option système mécatronique et robotique.",
       date: "2022",
     },
     {
@@ -172,31 +172,82 @@ export class CardService {
       sousTitre: "JavaScript",
       date: "2022",
       imageUrl: './../../assets/snake.png',
-      description:"",
       lienUrl: "https://snake-game-16640.web.app",
+      lienNom: "Lien vers projet"
+
+    },
+    {
+      titre: "Pierre, feuille, ciseaux",
+      sousTitre: "JavaScript",
+      date: "2022",
+      imageUrl: './../../assets/pierre-feuille-ciseaux.png',
+      lienUrl: "https://pierre-feuille-ciseaux-5e109.web.app/",
       lienNom: "Lien vers projet"
 
     }
   ]
   cardsProjetsScolaire: Cards[] = [
     {
-      titre: "tableau Kanban",
-      sousTitre: "angular",
-      imageUrl: './../../assets/kanban.png',
-      description:"",
-      lienUrl: "https://kanban-1c263.web.app",
-      lienNom: "Lien vers projet"
-
+      titre:"Robot delta trieur de déchets",
+      sousTitre: "Python",
+      date: "2022",
+      imageUrl: './../../assets/pist.jpg',
+      description:"modélisation et contrôle du robot avec des moteurs Dynamixel",
     },
     
     {
-      titre: "Snake",
-      sousTitre: "javaScript",
-      imageUrl: './../../assets/snake.png',
-      description:"",
-      lienUrl: "https://snake-game-16640.web.app",
-      lienNom: "Lien vers projet"
+      titre: "Commande multivariable",
+      sousTitre: "Matlab",
+      date: "2022",
+      imageUrl: './../../assets/commande multivariable.png',
+      description:" Commande d'un système non linéaire dynamique multivariable. Mise en place d'un observateur, linéarisation du sytème, découplage, représentation d'état.",
+      
 
+    },
+    {
+      titre: "Vision 3D",
+      sousTitre: "Matlab",
+      date: "2022",
+      imageUrl: './../../assets/vision3D.png',
+      description:" Mosaique de deux images par homographie ",
+      
+    },
+    {
+      titre: "Vision 3D",
+      sousTitre: "Matlab",
+      date: "2022",
+      imageUrl: './../../assets/vision3d-2.png',
+      description:" Représentation  3D d'un cube par triangulation 3D sur deux images  ",
+
+    },
+    {
+      titre: "Vision 2D",
+      sousTitre: "Python, openCV",
+      date: "2022",
+      imageUrl: './../../assets/vision2D.png',
+      description:"Détection de forme sur une image",
+      
+    },
+    {
+      titre: "Jeu multijoueur Amung Us",
+      sousTitre: "Java",
+      date: "2021",
+      imageUrl: './../../assets/amung-us.png',
+      description:"Jeu multijoueur de type Among-us réalisé en équipe de 7 personnes.",
+    },
+    {
+      titre: "Labyrinthe",
+      sousTitre: "Java",
+      date: "2020",
+      imageUrl: './../../assets/labyrinthe.png',
+      description:"Réalisation d'un labyrinthe avec solution",
+    },
+    {
+      titre: "Jeu Démineur",
+      sousTitre: "Python, tkinter",
+      date: "2017",
+      imageUrl: './../../assets/demineur.png',
+      description:"Réalisation d'un démineur en équipe de 3.",
     }
   ]
 

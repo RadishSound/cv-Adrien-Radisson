@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
 import { Observable } from 'rxjs';
 import { BreakpointObserver } from '@angular/cdk/layout'
@@ -8,11 +8,15 @@ import { BreakpointObserver } from '@angular/cdk/layout'
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   @ViewChild(MatSidenav)  
   sidenav!: MatSidenav;
+  titre!: string;
   constructor(private observer: BreakpointObserver){
 
+  }
+  ngOnInit(): void {
+    this.titre="Contact"
   }
 
   ngAfterViewInit(){
@@ -25,5 +29,8 @@ export class AppComponent {
         this.sidenav.open();
       }
     })
+  }
+  changeTitle(titre:string){
+    this.titre = titre;
   }
 }
